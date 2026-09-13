@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout android:orientation="vertical" android:padding="20dp"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:text="پویان‌ترید — DOGE" android:textSize="28sp" android:textStyle="bold"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/status" android:text="در حال آماده‌سازی..." android:textSize="18sp"
+        android:layout_marginTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/price" android:text="قیمت: -" android:textSize="20sp"
+        android:layout_marginTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/signal" android:text="سیگنال: -" android:textSize="24sp" android:textStyle="bold"
+        android:layout_marginTop="18dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/details" android:text="-" android:textSize="16sp"
+        android:layout_marginTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:text="اهرم" android:textSize="18sp" android:layout_marginTop="18dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RadioGroup android:id="@+id/leverageGroup" android:orientation="horizontal"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/x10" android:text="10×" android:checked="true"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioButton android:id="@+id/x20" android:text="20×"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </RadioGroup>
+    <Button android:id="@+id/refresh" android:text="تحلیل دوباره"
+        android:layout_marginTop="18dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:text="هشدارها در این نسخه هنگام باز بودن برنامه بررسی می‌شوند. برای هشدار پس‌زمینه، نسخه بعدی از سرویس زمان‌بندی استفاده می‌کند."
+        android:textSize="13sp" android:layout_marginTop="18dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:text="این برنامه ابزار تحلیلی است و سود یا سیگنال قطعی تضمین نمی‌کند؛ معاملات اهرمی ریسک بالایی دارند."
+        android:textSize="13sp" android:layout_marginTop="12dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>
+</ScrollView>
