@@ -73,7 +73,7 @@ public class MainActivity extends Activity {
         for(int i=1;i<x.size();i++) e=x.get(i)*k+e*(1-k);
         return e;
     }
-    double atr(ArrayList<Double> x,int n){ double sum=0; int start=Math.max(1,x.size()-n); for(int i=start;i<x.size();i++) sum+=Math.abs(x.get(i)-x.get(i-1)); return sum/(x.size()-start); } 
+   
     double rsi(ArrayList<Double> x,int n){
         double gain=0,loss=0;
         for(int i=x.size()-n;i<x.size();i++){ double d=x.get(i)-x.get(i-1); if(d>0)gain+=d; else loss-=d; }
